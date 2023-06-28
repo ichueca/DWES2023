@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.zabalburu.gt.dao.TareasDAO;
 import org.zabalburu.gt.dao.TareasList;
+import org.zabalburu.gt.dao.TareasSQLServer;
 import org.zabalburu.gt.modelo.Empleado;
 import org.zabalburu.gt.modelo.Tarea;
 
 public final class TareasServicio {
 
-	private TareasDAO dao = TareasList.getInstance();
+	//private TareasDAO dao = TareasList.getInstance();
+	private TareasDAO dao = TareasSQLServer.getInstance();	
 	
 	private static TareasServicio tareasServicio;
 	
